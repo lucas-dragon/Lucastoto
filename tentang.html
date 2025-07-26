@@ -3,51 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tentang Lucastoto</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #1f4068, #2a5298);
-      color: white;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background-color: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 10px;
-    }
-  </style>
+  <title>Tentang - LucasToto</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Tentang Lucastoto</h1>
-  </header>
   <nav>
     <a href="index.html">Beranda</a>
+    <a href="layanan1.html">Layanan 1</a>
+    <a href="layanan2.html">Layanan 2</a>
+    <a href="layanan3.html">Layanan 3</a>
+    <a href="layanan4.html">Layanan 4</a>
+    <a href="layanan5.html">Layanan 5</a>
     <a href="tentang.html">Tentang</a>
     <a href="kontak.html">Kontak</a>
+    <a href="login.html">Login</a>
   </nav>
+
   <div class="container">
-    <p>Lucastoto adalah platform layanan online yang menyediakan berbagai informasi dan bantuan untuk pengguna baru maupun lama.</p>
-    <p>Kami hadir untuk membantu proses pendaftaran, panduan bermain, hingga informasi lengkap tentang deposit dan penarikan dana.</p>
-    <p>Dengan layanan support 24 jam, kami siap membantu Anda kapan saja.</p>
+    <h1>Tentang LucasToto</h1>
+    <p><strong>LucasToto</strong> adalah platform penyedia layanan informasi dan panduan untuk para pemain togel online. Kami berkomitmen memberikan layanan terbaik, mulai dari pendaftaran akun, informasi transaksi, hingga dukungan pelanggan 24 jam.</p>
+    
+    <p>Kami percaya bahwa pengalaman bermain harus nyaman, aman, dan mudah. Oleh karena itu, situs ini dirancang dengan antarmuka yang responsif, tampilan yang bersih, serta navigasi yang mudah.</p>
+
+    <p>Jika Anda memiliki pertanyaan lebih lanjut tentang layanan kami, silakan kunjungi halaman <a href=\"kontak.html\">Kontak</a>.</p>
+
+    <a href="index.html" class="btn">⬅ Kembali ke Beranda</a>
   </div>
+
+  <script>
+    const toggleBtn = document.createElement('button');
+    toggleBtn.textContent = '🌓 Toggle Mode';
+    toggleBtn.className = 'toggle-theme btn';
+    toggleBtn.onclick = () => document.body.classList.toggle('dark-mode');
+    document.body.appendChild(toggleBtn);
+  </script>
 </body>
 </html>
