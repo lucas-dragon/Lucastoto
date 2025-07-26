@@ -3,57 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontak Lucastoto</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #2b5876, #4e4376);
-      color: white;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background-color: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .kontak {
-      font-size: 1.2em;
-    }
-    .kontak a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-  </style>
+  <title>Kontak - LucasToto</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Kontak Kami</h1>
+    <h1>Hubungi Kami</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html" class="active">Kontak</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Beranda</a>
-    <a href="tentang.html">Tentang</a>
-    <a href="kontak.html">Kontak</a>
-  </nav>
-  <div class="container">
-    <p class="kontak">📱 WhatsApp: <a href="https://wa.me/6281234567890">+62 812-3456-7890</a></p>
-    <p class="kontak">📧 Email: <a href="mailto:support@lucastoto.com">support@lucastoto.com</a></p>
-  </div>
+
+  <main>
+    <section>
+      <h2>Formulir Kontak</h2>
+      <form action="https://formspree.io/f/mnnzdgvg" method="POST">
+        <label>Nama:
+          <input type="text" name="name" required>
+        </label>
+        <label>Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>Pesan:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LucasToto. All rights reserved.</p>
+  </footer>
 </body>
 </html>
