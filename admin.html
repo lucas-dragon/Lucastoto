@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - LucasToto</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="layanan1.html">Layanan 1</a>
+    <a href="layanan2.html">Layanan 2</a>
+    <a href="layanan3.html">Layanan 3</a>
+    <a href="layanan4.html">Layanan 4</a>
+    <a href="layanan5.html">Layanan 5</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="login.html">Login</a>
+    <a href="admin.html"><strong>Admin</strong></a>
+  </nav>
+
+  <div class="container">
+    <h1>Dashboard Admin</h1>
+
+    <section class="card">
+      <h2>Statistik Hari Ini</h2>
+      <ul>
+        <li>🧑 Total Pengguna: 152</li>
+        <li>💰 Transaksi Hari Ini: Rp 3.200.000</li>
+        <li>📥 Deposit Masuk: Rp 2.500.000</li>
+        <li>📤 Withdraw Diproses: Rp 1.000.000</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Aksi Cepat</h2>
+      <button class="btn">📋 Lihat Semua Pengguna</button>
+      <button class="btn">📤 Proses Withdraw</button>
+      <button class="btn">📥 Konfirmasi Deposit</button>
+    </section>
+  </div>
+
+  <script>
+    const toggleBtn = document.createElement('button');
+    toggleBtn.textContent = '🌓 Toggle Mode';
+    toggleBtn.className = 'toggle-theme btn';
+    toggleBtn.onclick = () => document.body.classList.toggle('dark-mode');
+    document.body.appendChild(toggleBtn);
+  </script>
+</body>
+</html>
