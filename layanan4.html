@@ -1,61 +1,42 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Layanan 4 - Bonus & Referral</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fffefc;
-      padding: 20px;
-      margin: 0;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    h1 {
-      color: #e67e22;
-      text-align: center;
-    }
-    ul {
-      padding-left: 20px;
-      line-height: 1.8;
-      color: #333;
-    }
-    .note {
-      margin-top: 20px;
-      color: #666;
-      font-style: italic;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #e67e22;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-    .button:hover {
-      background-color: #d35400;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="layanan1.html">Layanan 1</a>
+    <a href="layanan2.html">Layanan 2</a>
+    <a href="layanan3.html">Layanan 3</a>
+    <a href="layanan4.html">Layanan 4</a>
+    <a href="layanan5.html">Layanan 5</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="login.html">Login</a>
+  </nav>
+
   <div class="container">
     <h1>Bonus Harian & Referral</h1>
+    <p>Lucastoto memberikan berbagai bonus menarik untuk member setia:</p>
     <ul>
-      <li><strong>Bonus Harian:</strong> Login setiap hari untuk mendapatkan bonus saldo secara otomatis.</li>
-      <li><strong>Bonus Mingguan:</strong> Pengguna aktif mendapatkan bonus mingguan berdasarkan total taruhan.</li>
-      <li><strong>Referral Program:</strong> Undang teman-teman Anda dan dapatkan <strong>komisi hingga 10%</strong> dari aktivitas mereka.</li>
+      <li>🎁 <strong>Bonus Login Harian:</strong> Login setiap hari untuk klaim bonus otomatis.</li>
+      <li>📈 <strong>Bonus Mingguan:</strong> Bagi pemain aktif setiap minggu.</li>
+      <li>🤝 <strong>Referral Program:</strong> Ajak teman dan dapatkan 10% dari total turnover mereka!</li>
     </ul>
-    <p class="note">Bonus akan dikirim secara otomatis ke saldo utama Anda. Pastikan Anda memenuhi syarat dan ketentuan yang berlaku.</p>
-    <a href="index.html" class="button">⬅ Kembali ke Beranda</a>
+    <p>Bagikan link referral Anda ke teman, media sosial, atau komunitas untuk penghasilan tambahan.</p>
+    <a href="index.html" class="btn">⬅ Kembali ke Beranda</a>
   </div>
+
+  <script>
+    const toggleBtn = document.createElement('button');
+    toggleBtn.textContent = '🌓 Toggle Mode';
+    toggleBtn.className = 'toggle-theme btn';
+    toggleBtn.onclick = () => document.body.classList.toggle('dark-mode');
+    document.body.appendChild(toggleBtn);
+  </script>
 </body>
 </html>
